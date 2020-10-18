@@ -1,4 +1,5 @@
 basic.forever(function () {
     basic.showNumber(input.temperature())
-    basic.pause(1000)
+    serial.writeValue("Celsius", input.temperature())
+    basic.pause(700)
 })
